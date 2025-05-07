@@ -5,6 +5,7 @@ const authRoutes = require('./routes/authRoutes');
 const productRoutes = require('./routes/productRoutes');
 const sellerRoutes = require('./routes/seller');
 const orderRoutes = require('./routes/orderRoutes');
+const cartRoutes = require('./routes/cartRoutes');
 
 
 
@@ -33,7 +34,7 @@ app.use('/api/seller', sellerRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
-
+app.use('/cart', cartRoutes);
 
 
 // Server listening
